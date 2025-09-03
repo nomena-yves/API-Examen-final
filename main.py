@@ -21,8 +21,7 @@ class phone(BaseModel):
 
 resultat:List[phone]=[]
 
-@app.post("/phones")
- def phone(phone:phone):
-
-
-@app.get("/")
+@app.post("/phone")
+   def phone_root():
+   resultat.append(phone)
+     return resultat;
