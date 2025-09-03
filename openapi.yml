@@ -1,0 +1,23 @@
+openapi: 3.0.3
+info:
+  title: STD24012
+  version: 1.2.0
+  description: this is a specification of STD24012
+
+servers:
+  - url: http://localhost:8000
+
+
+paths:
+  /health:
+    get:
+      responses:
+       "200":
+         description: ok
+
+  /phone:
+    post:
+      parameters:
+      requestBody:
+        required: true
+         req
